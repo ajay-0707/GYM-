@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triple A Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('Image/ac.jpg');
+        width: 1280px;
+        height: 720px;
+        font-family: 'Baloo 2', cursive;
+
+    }
+
+    .left {
+        position: absolute;
+        top: 18px;
+        left: 34px;
+        display: inline-block;
+        left: 70px;
+        /* border: 2px solid red; */
+    }
+
+    .left img {
+        width: 100px;
+        filter: invert(100%);
+
+    }
+
+    .left div {
+        text-align: center;
+        font-style: 'Baloo 2', cursive;
+    }
+
+    .right {
+        position: absolute;
+        top: 18px;
+        right: 34px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .mid {
+        
+        width: 40%;
+        margin: 18px auto;
+        /* border: 2px solid black; */
+        
+    }
+
+    .navbar {
+        display: inline-block;
+        
+    }
+
+    .navbar li {
+        display: inline-block;
+        
+
+    }
+
+    .navbar li a {
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 20px 15px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: grey;
+        text-decoration: underline;
+    }
+
+    .btn {
+        background-color: rgb(5, 5, 5);
+        margin: 0px 9px;
+        color: rgb(252, 252, 252);
+        padding: 4px 14px;
+        border: 1px solid grey;
+        border-radius: 7px;
+        font-size: 12px;
+        cursor: pointer;
+
+
+    }
+
+    .btn:hover {
+        background-color: rgb(37, 36, 35);
+    }
+
+    .container {
+        border: 2px solid rgb(230, 221, 221);
+        margin: 100px 30px;
+        padding: 40px;
+        width: 28%;
+        border-radius: 10px;
+        font-size: 10px;
+        
+
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        padding: 3px;
+        margin: 10px auto;
+        border: 1px solid black;
+        width: 300px;
+        font: 20px;
+        border-radius: 6px;
+        font-style: 'Baloo 2', cursive;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="Image/s.jpg" alt="">
+            <div>
+                Triple A Fitness
+            </div>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best GYM of Deedwana now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Contact number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+</body>
+
+</html>
